@@ -8,7 +8,7 @@ const ExperiencePage = () => {
   return (
     <>
       <Helmet>
-        <title>Experience | Aparimit Rathour</title>
+        <title>Experience | Aparimit</title>
         <meta name="description" content="Explore the professional experience and career path of Aparimit Rathour." />
       </Helmet>
       
@@ -16,7 +16,6 @@ const ExperiencePage = () => {
       <main>
         <Experience />
       </main>
-      <Footer />
     </>
   );
 };

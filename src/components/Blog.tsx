@@ -180,4 +180,18 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+const BlogTemp = () => {
+		return (
+			<>
+				<section
+					id="home"
+					className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+					<h2 className="text-xl text-primary font-semibold opacity-0 animate-text-reveal">
+						Currently in Development!
+					</h2>
+				</section>
+			</>
+		);
+};
+
+export default BlogTemp;

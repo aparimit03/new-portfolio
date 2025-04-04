@@ -20,54 +20,122 @@ const Skills = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   const skillCategories: SkillCategory[] = [
-    {
-      name: "Mobile Development",
-      icon: "📱",
-      skills: [
-        { name: "Kotlin", level: 5, description: "Primary language for Android development" },
-        { name: "Jetpack Compose", level: 4, description: "Modern toolkit for building native UI" },
-        { name: "Android SDK", level: 4, description: "Core Android development" },
-        { name: "Firebase", level: 4, description: "Backend services & analytics" },
-        { name: "MVVM Architecture", level: 4, description: "App architecture pattern" },
-        { name: "Retrofit", level: 4, description: "REST API client" },
-        { name: "Room Database", level: 4, description: "Local data persistence" },
-      ],
-    },
-    {
-      name: "Web Development",
-      icon: "💻",
-      skills: [
-        { name: "React", level: 3, description: "UI library for web applications" },
-        { name: "Next.js", level: 2, description: "React framework for production" },
-        { name: "Tailwind CSS", level: 4, description: "Utility-first CSS framework" },
-        { name: "JavaScript", level: 4, description: "Web programming language" },
-        { name: "TypeScript", level: 3, description: "Typed JavaScript" },
-        { name: "HTML5/CSS3", level: 4, description: "Web markup & styling" },
-      ],
-    },
-    {
-      name: "Backend",
-      icon: "⚙️",
-      skills: [
-        { name: "Node.js", level: 3, description: "JavaScript runtime" },
-        { name: "Express", level: 3, description: "Web application framework" },
-        { name: "MongoDB", level: 3, description: "NoSQL database" },
-        { name: "RESTful APIs", level: 4, description: "API design & development" },
-        { name: "Firebase", level: 4, description: "Backend-as-a-Service" },
-      ],
-    },
-    {
-      name: "Tools & Others",
-      icon: "🔧",
-      skills: [
-        { name: "Git", level: 4, description: "Version control" },
-        { name: "GitHub", level: 4, description: "Code repository & collaboration" },
-        { name: "Agile/Scrum", level: 3, description: "Development methodology" },
-        { name: "Jira", level: 3, description: "Project management" },
-        { name: "Figma", level: 3, description: "Design & prototyping" },
-        { name: "CI/CD", level: 3, description: "Continuous integration/deployment" },
-      ],
-    },
+		{
+			name: "Mobile Development",
+			icon: "📱",
+			skills: [
+				{
+					name: "Kotlin",
+					level: 5,
+					description: "Primary language for Android development",
+				},
+				{
+					name: "Jetpack Compose",
+					level: 4,
+					description: "Modern toolkit for building native UI",
+				},
+				{
+					name: "Android SDK",
+					level: 4,
+					description: "Core Android development",
+				},
+				{
+					name: "Firebase",
+					level: 4,
+					description: "Backend services & analytics",
+				},
+				// { name: "MVVM Architecture", level: 4, description: "App architecture pattern" },
+				{ name: "Retrofit", level: 4, description: "REST API client" },
+				{
+					name: "Room Database",
+					level: 4,
+					description: "Local data persistence",
+				},
+			],
+		},
+		{
+			name: "Web Development",
+			icon: "💻",
+			skills: [
+				{
+					name: "React",
+					level: 1,
+					description: "UI library for web applications",
+				},
+				// { name: "Next.js", level: 2, description: "React framework for production" },
+				{
+					name: "Tailwind CSS",
+					level: 2,
+					description: "Utility-first CSS framework",
+				},
+				{
+					name: "JavaScript",
+					level: 4,
+					description: "Web programming language",
+				},
+				{
+					name: "TypeScript",
+					level: 3,
+					description: "Typed JavaScript",
+				},
+				{
+					name: "HTML5/CSS3",
+					level: 4,
+					description: "Web markup & styling",
+				},
+			],
+		},
+		{
+			name: "Backend",
+			icon: "⚙️",
+			skills: [
+				{
+					name: "Node.js",
+					level: 3,
+					description: "JavaScript runtime",
+				},
+				{
+					name: "Express",
+					level: 3,
+					description: "Web application framework",
+				},
+				{ name: "MongoDB", level: 3, description: "NoSQL database" },
+				{
+					name: "RESTful APIs",
+					level: 4,
+					description: "API design & development",
+				},
+				{
+					name: "Firebase",
+					level: 4,
+					description: "Backend-as-a-Service",
+				},
+			],
+		},
+		{
+			name: "Tools & Others",
+			icon: "🔧",
+			skills: [
+				{ name: "Git", level: 4, description: "Version control" },
+				{
+					name: "GitHub",
+					level: 4,
+					description: "Code repository & collaboration",
+				},
+				{
+					name: "Agile/Scrum",
+					level: 3,
+					description: "Development methodology",
+				},
+				{ name: "Jira", level: 3, description: "Project management" },
+				{
+					name: "Figma",
+					level: 3,
+					description: "Design & prototyping",
+				},
+				// { name: "CI/CD", level: 3, description: "Continuous integration/deployment" },
+			],
+		},
   ];
 
   // Handle skill category selection

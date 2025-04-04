@@ -21,64 +21,24 @@ const Projects = () => {
 
   // Project data
   const projects: Project[] = [
-    {
-      id: 1,
-      title: "QwickTix",
-      description: "A mobile event ticketing platform that simplifies the process of finding, booking, and managing event tickets. Built with Kotlin, Jetpack Compose, and Firebase.",
-      image: "/placeholder.svg",
-      tags: ["Kotlin", "Jetpack Compose", "Firebase", "MVVM", "Material Design"],
-      liveLink: "https://play.google.com/store",
-      githubLink: "https://github.com/aparimit-rathour/qwicktix",
-      featured: true,
-    },
-    {
-      id: 2,
-      title: "Vibé",
-      description: "Real-time chat application with features like message reactions, file sharing, and voice messages. Implements WebSockets for instant messaging.",
-      image: "/placeholder.svg",
-      tags: ["React", "Node.js", "Socket.io", "MongoDB", "JWT"],
-      liveLink: "https://vibe-chat.vercel.app",
-      githubLink: "https://github.com/aparimit-rathour/vibe-chat",
-      featured: true,
-    },
-    {
-      id: 3,
-      title: "Eventador",
-      description: "Event discovery app with personalized recommendations based on user preferences and location. Includes features like event reminder and ticket management.",
-      image: "/placeholder.svg",
-      tags: ["Kotlin", "Android SDK", "Retrofit", "Room", "Google Maps API"],
-      githubLink: "https://github.com/aparimit-rathour/eventador",
-      featured: true,
-    },
-    {
-      id: 4,
-      title: "Blind Coding Platform",
-      description: "A web platform for blind coding competitions where participants write code without seeing the output until submission.",
-      image: "/placeholder.svg",
-      tags: ["React", "Express", "MongoDB", "Judge0 API", "WebSockets"],
-      liveLink: "https://blindcoding.vercel.app",
-      githubLink: "https://github.com/aparimit-rathour/blind-coding",
-      featured: true,
-    },
-    {
-      id: 5,
-      title: "Digital Business Card",
-      description: "A mobile app that creates and shares digital business cards with NFC support and analytics tracking.",
-      image: "/placeholder.svg",
-      tags: ["Kotlin", "Jetpack Compose", "Firebase", "NFC API"],
-      githubLink: "https://github.com/aparimit-rathour/digital-biz-card",
-      featured: true,
-    },
-    {
-      id: 6,
-      title: "Portfolio Website",
-      description: "My personal portfolio website built with React, TypeScript, and Tailwind CSS.",
-      image: "/placeholder.svg",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      liveLink: "https://aparimit-rathour.com",
-      githubLink: "https://github.com/aparimit-rathour/portfolio",
-      featured: false,
-    },
+		{
+			id: 1,
+			title: "Glyd",
+			description:
+				"A mobile Image Carousel library library simplifies the process of displaying a series of images in a slider on Android.",
+			image: "/glyd.png",
+			tags: [
+				"Kotlin",
+				"Android",
+				"Open Source",
+				"UI/UX",
+				"Auto Scroll",
+				"MVP",
+			],
+			liveLink: "https://jitpack.io/#aparimit03/image-carousel-kotlin",
+			githubLink: "https://github.com/aparimit03/image-carousel-kotlin",
+			featured: true,
+		},
   ];
 
   // Filter projects based on the showAll state
@@ -112,23 +72,23 @@ const Projects = () => {
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-muted-foreground mb-4 line-clamp-3">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  {project.tags.slice(0, 3).map((tag) => (
+                  {project.tags.map((tag) => (
                     <span key={tag} className="tag">
                       {tag}
                     </span>
                   ))}
-                  {project.tags.length > 3 && (
+                  {/* {project.tags.length > 3 && (
                     <span className="tag bg-secondary/50">
                       +{project.tags.length - 3}
                     </span>
-                  )}
+                  )} */}
                 </div>
               </CardContent>
               <CardFooter className="p-6 pt-0 flex justify-between gap-4">
                 {project.liveLink && (
                   <Button variant="outline" size="sm" asChild className="flex-1">
                     <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+                      <ExternalLink className="mr-2 h-4 w-4" /> Live
                     </a>
                   </Button>
                 )}
@@ -145,7 +105,7 @@ const Projects = () => {
         </div>
 
         {/* Show More/Less Button */}
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <Button
             onClick={() => setShowAll(!showAll)}
             variant="outline"
@@ -154,7 +114,7 @@ const Projects = () => {
             {showAll ? "Show Less" : "View All Projects"} 
             <ArrowRight className={`ml-2 h-4 w-4 transition-transform ${showAll ? "rotate-90" : ""}`} />
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

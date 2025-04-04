@@ -16,48 +16,32 @@ interface Experience {
 const Experience = () => {
   // Experience data
   const experiences: Experience[] = [
-    {
-      id: 1,
-      role: "Android Developer",
-      company: "Zypp Electric",
-      duration: "1.5 years",
-      date: "Jan 2023 - Present",
-      description: [
-        "Led the development of driver-side Android application using Kotlin and Jetpack Compose",
-        "Implemented real-time tracking, push notifications, and payment integration features",
-        "Reduced app crash rate by 60% through optimized performance and memory management",
-        "Collaborated with design and backend teams to deliver seamless user experience"
-      ],
-      logo: "/placeholder.svg"
-    },
-    {
-      id: 2,
-      role: "Android Development Intern",
-      company: "GeeksforGeeks",
-      duration: "6 months",
-      date: "Jun 2022 - Dec 2022",
-      description: [
-        "Developed and maintained features for the GeeksforGeeks Android application",
-        "Created custom UI components and implemented responsive layouts",
-        "Worked on integrating REST APIs and local data persistence using Room",
-        "Participated in code reviews and testing to ensure app quality"
-      ],
-      logo: "/placeholder.svg"
-    },
-    {
-      id: 3,
-      role: "Vice-President",
-      company: "GeeksforGeeks ABESEC",
-      duration: "1 year",
-      date: "Aug 2021 - Jul 2022",
-      description: [
-        "Led a team of 15 students to organize technical workshops and coding competitions",
-        "Conducted Android development workshops for over 200 students",
-        "Managed community engagement and growth strategies",
-        "Collaborated with other student chapters for joint technical events"
-      ],
-      logo: "/placeholder.svg"
-    }
+		{
+			id: 1,
+			role: "Android Developer",
+			company: "Zypp Electric",
+			duration: "3 months",
+			date: "Jan 2025 - Mar 2025",
+			description: [
+				"Led the development of SaaS App using Kotlin and Jetpack Compose",
+				"Implemented push notifications features",
+				"Collaborated with design and backend teams to deliver seamless user experience",
+			],
+			logo: "/zypp.png",
+		},
+		{
+			id: 2,
+			role: "Vice President",
+			company: "GeeksforGeeks ABESEC",
+			duration: "1 year",
+			date: "Jun 2023 - Jun 2024",
+			description: [
+				"Successfully organized technical workshops and webinars.",
+				"Held Tech Talks and Discussion Event",
+				"Worked with Team of over 30 people",
+			],
+			logo: "/gfg.png",
+		},
   ];
 
   return (
@@ -69,7 +53,7 @@ const Experience = () => {
           </div>
           <h2 className="mb-4">Professional Experience</h2>
           <p className="text-muted-foreground">
-            My professional journey and roles that have shaped my expertise in mobile and web development.
+            My professional journey and roles that have shaped my expertise.
           </p>
         </div>
 

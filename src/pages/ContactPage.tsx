@@ -8,7 +8,7 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact | Aparimit Rathour</title>
+        <title>Contact | Aparimit</title>
         <meta name="description" content="Get in touch with Aparimit Rathour for collaborations, projects, or inquiries." />
       </Helmet>
       
@@ -16,7 +16,6 @@ const ContactPage = () => {
       <main>
         <Contact />
       </main>
-      <Footer />
     </>
   );
 };

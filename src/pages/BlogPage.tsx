@@ -8,7 +8,7 @@ const BlogPage = () => {
   return (
     <>
       <Helmet>
-        <title>Blog | Aparimit Rathour</title>
+        <title>Blog | Aparimit</title>
         <meta name="description" content="Read the latest articles and insights from Aparimit Rathour on technology and development." />
       </Helmet>
       
@@ -16,7 +16,6 @@ const BlogPage = () => {
       <main>
         <Blog />
       </main>
-      <Footer />
     </>
   );
 };

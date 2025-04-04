@@ -8,7 +8,7 @@ const ProjectsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Projects | Aparimit Rathour</title>
+        <title>Projects | Aparimit</title>
         <meta name="description" content="Discover the portfolio of projects built by Aparimit Rathour, showcasing Android and React development." />
       </Helmet>
       
@@ -16,7 +16,6 @@ const ProjectsPage = () => {
       <main>
         <Projects />
       </main>
-      <Footer />
     </>
   );
 };

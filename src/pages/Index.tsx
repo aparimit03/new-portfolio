@@ -13,25 +13,21 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <>
-      <Helmet>
-        <title>Aparimit Rathour | Android Developer & React Enthusiast</title>
-        <meta name="description" content="Professional portfolio of Aparimit Rathour - Android Developer, React Enthusiast, and Tech Innovator based at Zypp Electric." />
-      </Helmet>
-      
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Achievements />
-        <Blog />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+		<>
+			<Helmet>
+				<title>Portfolio | Aparimit</title>
+				<meta
+					name="description"
+					content="Professional portfolio of Aparimit Rathour - Android Developer, React Enthusiast, and Tech Innovator based at Zypp Electric."
+				/>
+			</Helmet>
+
+			<Header />
+			<main>
+				<Hero />
+				<About />
+			</main>
+		</>
   );
 };
 

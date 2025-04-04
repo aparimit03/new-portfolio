@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { ChevronDown, Download, ArrowRight } from "lucide-react";
+import { ChevronDown, Download, ArrowRight, SquareArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 declare global {
@@ -116,62 +116,81 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
-      {/* Particles Background */}
-      <div id="particles-js" ref={particlesRef} className="absolute inset-0 z-0"></div>
+		<section
+			id="home"
+			className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden"
+		>
+			{/* Particles Background */}
+			<div
+				id="particles-js"
+				ref={particlesRef}
+				className="absolute inset-0 z-0"
+			></div>
 
-      {/* Content Container */}
-      <div className="container-custom relative z-10 flex flex-col items-center justify-center text-center">
-        <div className="max-w-3xl mx-auto">
-          {/* Avatar image with animation */}
-          <div className="relative w-36 h-36 md:w-40 md:h-40 mx-auto mb-8 rounded-full overflow-hidden border-4 border-primary/30 animate-float">
-            <img 
-              src="/placeholder.svg" 
-              alt="Aparimit Rathour" 
-              className="w-full h-full object-cover"
-            />
-          </div>
+			{/* Content Container */}
+			<div className="container-custom relative z-10 flex flex-col items-center justify-center text-center">
+				<div className="max-w-3xl mx-auto">
+					{/* Avatar image with animation */}
+					<div className="relative w-36 h-36 md:w-40 md:h-40 mx-auto mb-8 rounded-full overflow-hidden border-4 border-primary/30 animate-float">
+						<img
+							src="/profile.jpeg"
+							alt="Aparimit Rathour"
+							className="w-full h-full object-cover"
+						/>
+					</div>
 
-          {/* Animated text */}
-          <div className="space-y-4">
-            <h2 className="text-xl text-primary font-semibold opacity-0 animate-text-reveal">
-              Hello, I'm
-            </h2>
-            <h1 className="font-bold opacity-0 animate-text-reveal-delay-1 mb-4">
-              Aparimit Rathour
-            </h1>
-            <h3 className="text-xl opacity-0 animate-text-reveal-delay-2 mb-6">
+					{/* Animated text */}
+					<div className="space-y-4">
+						<h2 className="text-xl text-primary font-semibold opacity-0 animate-text-reveal">
+							Hello, I'm
+						</h2>
+						<h1 className="font-bold opacity-0 animate-text-reveal-delay-1 mb-4">
+							Aparimit Rathour
+						</h1>
+						{/* <h3 className="text-xl opacity-0 animate-text-reveal-delay-2 mb-6">
               Android Developer | React Enthusiast | Tech Innovator
             </h3>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto opacity-0 animate-text-reveal-delay-3">
               Building impactful digital experiences that transform ideas into reality.
-            </p>
-          </div>
+            </p> */}
+					</div>
 
-          {/* Call to Action Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 opacity-0 animate-text-reveal-delay-3">
-            <Button asChild size="lg" className="rounded-full">
-              <a href="#projects">
-                View My Projects <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-            <Button variant="outline" size="lg" className="rounded-full">
-              <a href="/resume.pdf" download="AparimitRathour_Resume.pdf">
-                Download CV <Download className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-          </div>
-        </div>
+					{/* Call to Action Buttons */}
+					<div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 opacity-0 animate-text-reveal-delay-3">
+						<Button
+							asChild
+							size="lg"
+							className="rounded-full"
+						>
+							<a href="/projects">
+								Projects <ArrowRight className="ml-2 h-4 w-4" />
+							</a>
+						</Button>
+						<Button
+							variant="outline"
+							size="lg"
+							className="rounded-full"
+						>
+							<a
+								target="_blank"
+								href="https://drive.google.com/file/d/18lwHHmSJehiN4KpkRHfrSp6blW-fIl_-/view?usp=sharing"
+							>
+								Resumé
+							</a>
+              <SquareArrowUpRight/>
+						</Button>
+					</div>
+				</div>
 
-        {/* Scroll Down Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-pulse-slow hidden md:block">
+				{/* Scroll Down Indicator */}
+				{/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-pulse-slow hidden md:block">
           <a href="#about" className="flex flex-col items-center text-sm text-muted-foreground">
             <span className="mb-2">Scroll Down</span>
             <ChevronDown className="h-6 w-6" />
           </a>
-        </div>
-      </div>
-    </section>
+        </div> */}
+			</div>
+		</section>
   );
 };
 

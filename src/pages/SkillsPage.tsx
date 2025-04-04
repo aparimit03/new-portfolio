@@ -8,7 +8,7 @@ const SkillsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Skills | Aparimit Rathour</title>
+        <title>Skills | Aparimit</title>
         <meta name="description" content="Explore the technical skills and expertise of Aparimit Rathour in mobile and web development." />
       </Helmet>
       
@@ -16,7 +16,6 @@ const SkillsPage = () => {
       <main>
         <Skills />
       </main>
-      <Footer />
     </>
   );
 };
